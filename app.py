@@ -61,7 +61,7 @@ if uploaded is not None:
     c3.metric("AUC", f"{auc:.3f}")
     c3.metric("MCC", f"{matthews_corrcoef(y_true, y_pred):.3f}")
 
-    # d. Confusion matrix
+    # d. Confusion matrixs
     st.subheader("Confusion Matrix")
     fig, ax = plt.subplots()
     sns.heatmap(confusion_matrix(y_true, y_pred), annot=True, fmt='d', cmap='Blues', ax=ax)
