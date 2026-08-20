@@ -11,7 +11,7 @@ from sklearn.metrics import (confusion_matrix, classification_report, accuracy_s
 st.set_page_config(page_title="Classification Model Explorer", layout="wide")
 st.title("Classification Model Explorer")   # personalize this
 
-TARGET = 'your_target_column'   # must match train_models.py
+TARGET = 'target'  
 
 @st.cache_resource
 def load_artifacts():
